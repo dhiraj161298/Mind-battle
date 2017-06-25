@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400');
+
+.game {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 100px;
+  font-weight: 200;
+}
+
+.hintBox {
+  font-size: 30px;
+}
+
+.hintBox span {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 10px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 2px solid;
+}
+
+.meaning span {
+    border-color: #9b59b6;
+}
+
+.usage {
+  margin-top: 30px;
+}
+
+.usage span {
+  border-color: #3498db;
+}
+
+.inputBox {
+  margin-top: 120px;
+}
+
+.inputBox input {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-family: "Montserrat",sans-serif;
+  font-size: 40px;
+  padding: 15px 20px;
+  text-align: center;
+  width: 400px;
+  font-weight: 100;
+}
+
+.status {
+  font-size: 20px;
+  margin-top: 20px;
+}
