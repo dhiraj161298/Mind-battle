@@ -22,7 +22,7 @@
        url("../fonts/33644E_C_0.ttf") format("truetype");
 }
 
-html, body, .homeWrapper{
+html, body{
   /* Height and width fallback for older browsers. */
   height: 100%;
   width: 100%;
@@ -31,12 +31,18 @@ html, body, .homeWrapper{
   height: 100vh;
   width: 100vw;
   margin: 0;
+  background: #131200;
 }
 
 .homeWrapper {
-  background: #ffd31c;
+  background: #ffd31c url("../../images/bg.png") repeat scroll 0 100%;
   font-family: 'MuseoSlab',sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+	height: 95vh;
+	width: 98vw;
+	position: absolute;
+	top: 2.5%;
+	left: 1%;
 }
 
 .header {
@@ -83,10 +89,50 @@ html, body, .homeWrapper{
   font-size: 48px;
   text-transform: uppercase;
   color: #fefefe;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .intro span {
-  font-weight: 400;
   font-size: 22px;
+  color: rgb(255, 240, 183);
+}
+
+.intro span strong {
+  color: rgb(255, 255, 251);
+  font-weight: 400;
+}
+
+.buttonContainer {
+  margin: 30px 0;
+}
+
+.buttonContainer a {
+  border: 2px solid #fffffe;
+  border-radius: 25px;
+  color: #fffffe;
+  margin: 0 10px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  position: relative;
+  font-size: 20px;
+}
+
+.buttonContainer a:hover {
+    color: #222;
+}
+.buttonContainer a::after {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 25px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: height 0.3s ease 0s;
+    width: 100%;
+    z-index: -1;
+}
+.buttonContainer a:hover::after {
+    height: 100%;
 }

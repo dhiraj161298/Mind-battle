@@ -3,6 +3,16 @@ import './css/homepage.css';
 import logo from '../images/logo.png';
 
 export default class Homepage extends Component {
+
+  componentDidMount() {
+    var bg = document.querySelector(".homeWrapper");
+    var pos = 0;
+    window.setInterval(function moveBg() {
+      pos++;
+      bg.style.backgroundPosition = `${pos}px 100%`;
+    }, 70)
+  }
+
   render() {
     return (
       <div className='homeWrapper'>
@@ -19,9 +29,13 @@ export default class Homepage extends Component {
         </div>
         <div className='intro'>
           <h2>Let the battle begin</h2>
-          <span>Mind Battle is a platform beautifully crafted for intermediate
-            and professional quizzers.
+          <span><strong>Mind Battle</strong> is a platform <strong>beautifully</strong> crafted for intermediate
+            and professional <strong>quizzers</strong>.
           </span>
+          <div className='buttonContainer'>
+            <a href='http://localhost:3000/'>single player</a>
+            <a href='http://localhost:3000/'>multi player</a>
+          </div>
         </div>
       </div>
     );
