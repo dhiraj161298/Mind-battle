@@ -1,0 +1,40 @@
+.header {
+  padding: 40px 25px;
+}
+
+.header-enter {
+  background: red;
+  display: none;
+}
+
+.header-enter-active {
+  background: black;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+}

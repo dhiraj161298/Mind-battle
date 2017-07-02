@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-import Game from './components/game.js';
+import React from 'react';
+import Homepage from './components/homepage';
+import SinglePlayer from './components/singleplayer';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-class App extends Component {
-
-  render() {
-    return (
-      // <div className="App">
-      //   <div className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <h2>Mind Battle</h2>
-      //   </div>
-      // </div>
-      <Game />
-    );
-  }
+const App = () => {
+  return(
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={Homepage} />
+        <Route path='/singleplayer' component={SinglePlayer} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;

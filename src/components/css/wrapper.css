@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "MuseoSlab"; font-style: normal; font-weight: 700;
+  src:  url("../fonts/33644E_2_0.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/33644E_2_0.woff2") format("woff2"),
+        url("../fonts/33644E_2_0.woff") format("woff"),
+        url("../fonts/33644E_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSlab"; font-style: normal; font-weight: 400;
+  src: url("../fonts/33644E_4_0.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/33644E_4_0.woff2") format("woff2"),
+       url("../fonts/33644E_4_0.woff") format("woff"),
+       url("../fonts/33644E_4_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/33644E_C_0.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/33644E_C_0.woff2") format("woff2"),
+       url("../fonts/33644E_C_0.woff") format("woff"),
+       url("../fonts/33644E_C_0.ttf") format("truetype");
+}
+
+html, body{
+  /* Height and width fallback for older browsers. */
+  height: 100%;
+  width: 100%;
+
+  /* Set the height and width to match that of the viewport. */
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: #131200;
+}
+
+.wrapper {
+  background: #ffd31c url("../../images/bg.png") repeat scroll 0 100%;
+  font-family: 'MuseoSlab',sans-serif;
+  font-weight: 400;
+	height: 95vh;
+	width: 98vw;
+	position: absolute;
+	top: 2.5%;
+	left: 1%;
+}

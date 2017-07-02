@@ -1,43 +1,35 @@
 import React, { Component } from 'react';
+import Wrapper from './wrapper';
 import './css/homepage.css';
-import logo from '../images/logo.png';
+import {Link} from 'react-router-dom';
 
 export default class Homepage extends Component {
 
   componentDidMount() {
-    var bg = document.querySelector(".homeWrapper");
+    var bg = document.querySelector(".wrapper");
     var pos = 0;
     window.setInterval(function moveBg() {
       pos++;
       bg.style.backgroundPosition = `${pos}px 100%`;
-    }, 70)
+    }, 65)
   }
 
   render() {
     return (
-      <div className='homeWrapper'>
-        <div className='header'>
-          <div className='logo'>
-            <img src={logo} alt="Mind Battle" />
-          </div>
-          <ul className='menu'>
-            <li>home</li>
-            <li>single player</li>
-            <li>multi player</li>
-            <li>leaderboard</li>
-          </ul>
-        </div>
+      <Wrapper>
         <div className='intro'>
           <h2>Let the battle begin</h2>
-          <span><strong>Mind Battle</strong> is a platform <strong>beautifully</strong> crafted for intermediate
-            and professional <strong>quizzers</strong>.
+          <span><strong>Mind Battle</strong> is a platform <strong>beautifully
+          </strong> crafted for intermediate and professional <strong>quizzers
+          </strong>. Select a game mode and test your <strong>quizzing
+          </strong> skills.
           </span>
           <div className='buttonContainer'>
-            <a href='http://localhost:3000/'>single player</a>
+            <Link to='/singleplayer'>single player</Link>
             <a href='http://localhost:3000/'>multi player</a>
           </div>
         </div>
-      </div>
+      </Wrapper>
     );
   }
 }
